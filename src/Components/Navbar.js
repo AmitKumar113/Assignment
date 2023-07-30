@@ -2,7 +2,6 @@ import React from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
-import '../styles.css'
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 
 
@@ -36,10 +35,10 @@ export default function navbar() {
                     <Box sx={{height:1, p:2, width:{xs:'100%', sm:'50%', md:'33%'}, bgcolor:'#301E4E'}}>
                         <Box sx={{margin:'20px', display:'flex', justifyContent:'right'}}> <HighlightOffIcon fontSize="large" onClick={handleClose} sx={{color:"white"}}/> </Box>
                         <Box sx={{margin:'20px'}}>
-                            <Typography color="white" sx={{fontFamily:'Playfair Display', p:2, fontSize:{xs:'2rem', sm:'3rem'}}} >Services</Typography>
-                            <Typography color="white" sx={{fontFamily:'Playfair Display', p:2, fontSize:{xs:'2rem', sm:'3rem'}}} >About us</Typography>
-                            <Typography color="white" sx={{fontFamily:'Playfair Display', p:2, fontSize:{xs:'2rem', sm:'3rem'}}} >Blogs</Typography>
-                            <Typography color="white" sx={{fontFamily:'Playfair Display', p:2, fontSize:{xs:'2rem', sm:'3rem'}}} >Contact us</Typography>
+                            <Typography color="white" sx={{fontFamily:'Playfair Display', fontSize:{xs:'2rem', sm:'3rem'}}} >Services</Typography>
+                            <Typography color="white" sx={{fontFamily:'Playfair Display', fontSize:{xs:'2rem', sm:'3rem'}}} >About us</Typography>
+                            <Typography color="white" sx={{fontFamily:'Playfair Display', fontSize:{xs:'2rem', sm:'3rem'}}} >Blogs</Typography>
+                            <Typography color="white" sx={{fontFamily:'Playfair Display', fontSize:{xs:'2rem', sm:'3rem'}}} >Contact us</Typography>
                             <Button sx={{bgcolor:'#FF6E6C', color:'white'}}>BOOK A FREE MARKETING AUDIT</Button>
                         </Box>
                     </Box>

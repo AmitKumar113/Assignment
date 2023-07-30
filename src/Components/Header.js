@@ -22,7 +22,6 @@ export default function Header() {
                 height:"fit-content",
                 backgroundColor:'rgba(248,248,248,0.6)',
                 padding:'12px',
-                // transform: {sm: 'translate(0,+35%)'},
                 margin:'20px 0',
                 boxSizing:'border-box',
                 
