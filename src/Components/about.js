@@ -46,7 +46,7 @@ export default function about() {
       }}>
             <Box sx={{
               bgcolor:'#E7D7F6',
-              width:{xs:'100%', sm:'60%'},
+              width:{xs:'100%', sm:'50%'},
               display:'flex',
               justifyContent:'center',
               // alignItems:'center',
@@ -65,7 +65,7 @@ export default function about() {
 
 
             <Box sx={{
-              width:{xs:'100%', sm:'40%'},
+              width:{xs:'100%', sm:'50%'},
               display:'flex',
               justifyContent:'center',
               alignItems:'center',
@@ -148,13 +148,67 @@ export default function about() {
               </Card>
 
               </Box>
+
+              <Box sx={{
+              display:'flex',
+              justifyContent:'center',
+              flexDirection:{xs:'column', sm:'row'},
+              margin:'10px'
+            }}>
+
+              <Card sx={{ maxWidth: {xs:'100%', sm:345}, marginTop:{xs:'10px', sm:'0px '}, bgcolor:"#301E4E" }}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    height="240"
+                    image={`${nike}`}
+                    alt="nike"
+                  />
+                  <CardContent>
+                  <Typography color="#FF6E6C" sx={{fontfamily:'Source Sans Pro'}}>Digital Marketing</Typography>
+                    <Typography gutterBottom variant="h5" component="div" color="white">
+                      NIKE
+                    </Typography>
+                    <Typography variant="body2" color="white">
+                    Our ad campaign brought 80% footfall to the company   
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+
+
+            <Card sx={{ maxWidth:{xs:'100%', sm:345}, marginTop:{xs:'10px', sm:'0px '}, bgcolor:"#301E4E" }}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    height="360"
+                    image={`${starbucks}`}
+                    alt="nike"
+                    // sx={{height: {xs:'240', sm:'360'}}}
+                  />
+                  <CardContent>
+                    <Typography color="#FF6E6C" sx={{fontfamily:'Source Sans Pro'}}>Digital Marketing</Typography>
+                    <Typography gutterBottom variant="h5" component="div" color="white">
+                      STARBUCKS
+                    </Typography>
+                    <Typography variant="body2" color="white">
+                    Our ad campaign brought 80% footfall to the company   
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+
+
+            
+
+              </Box>
           </Box>
     
 {/* ************************     Our partners section STARTS HERE       *************************/}
 
 
         <Box sx={{
-          height:'100vh',
+          height:'80vh',
           margin:'20px'
         }}>
             <Typography sx={{fontSize:{xs:'3rem', sm:'4rem'},fontFamily:'Playfair Display', fontWeight:700, letterSpacing:'-0.31px', lineHeight:'normal'}} >Our</Typography>

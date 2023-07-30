@@ -1,9 +1,12 @@
 import React from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
+import '../styles.css'
 
 export default function navbar() {
+
   return (
+    <>
     <Box sx={{ 
         width:1, 
         height:'50px', 
@@ -31,7 +34,8 @@ export default function navbar() {
                     }}>
                     <Typography sx={{margin:'10px', fontFamily:'Playfair Display'}} color='#301E4E'>Contact</Typography>
                     <Typography sx={{margin:'10px', fontFamily:'Playfair Display'}} color='#301E4E'>Work</Typography>
-                    <Box sx={{
+                    <Box
+                        sx={{
                         width:'25px',
                         height:'25px',
                         border:'1px solid black',
@@ -46,5 +50,11 @@ export default function navbar() {
                     </Box>
                 </Box>
     </Box>
+
+    <div id="popup" className='popup'>
+                    <Box sx={{height:1, width:{xs:'100%', sm:'50%', md:'33%'}, bgcolor:'#301E4E'}}>
+                    </Box>
+    </div>
+    </>
   )
 }
