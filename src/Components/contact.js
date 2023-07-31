@@ -4,12 +4,12 @@ import Typography from '@mui/material/Typography'
 
 export default function contact() {
   return (
-    <Box sx={{bgcolor:'#301E4E', px:4}}>
-        <Typography sx={{fontSize:{xs:'2rem', sm:'4rem'}, color:'#A17FC9', fontFamily:'Playfair Display', LineHeight:'normal'}}>
+    <Box sx={{bgcolor:'#301E4E', padding: '40px 10px 40px 40px'}}>
+        <Typography sx={{fontSize:{xs:'2rem', sm:'4rem'}, color:'#A17FC9', fontFamily:'Playfair Display', lineHeight:'normal', letterSpacing:'-0.31px'}}>
             Looking to drive
         </Typography>
-        <Typography sx={{fontSize:{xs:'2rem', sm:'4rem'}, color:'#A17FC9', fontFamily:'Playfair Display'}}>
-            results? Lets chat.
+        <Typography sx={{fontSize:{xs:'2rem', sm:'4rem'}, color:'#A17FC9', fontFamily:'Playfair Display',lineHeight:'normal', letterSpacing:'-0.31px'}}>
+            results? Lets chat. 
         </Typography>
     </Box>
   )

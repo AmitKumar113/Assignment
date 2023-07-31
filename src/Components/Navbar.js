@@ -3,6 +3,8 @@ import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
+import MenuIcon from '@mui/icons-material/Menu';
+import './../style.css'
 
 
 export default function navbar() {
@@ -23,7 +25,6 @@ export default function navbar() {
 
 <Box id="popup" className='popup' sx={{
             zIndex:10,
-            boxSizing:'border-box', 
             position:'fixed',
             width:'100vw', 
             height:'100vh',
@@ -35,23 +36,24 @@ export default function navbar() {
                     <Box sx={{height:1, p:2, width:{xs:'100%', sm:'50%', md:'33%'}, bgcolor:'#301E4E'}}>
                         <Box sx={{margin:'20px', display:'flex', justifyContent:'right'}}> <HighlightOffIcon fontSize="large" onClick={handleClose} sx={{color:"white"}}/> </Box>
                         <Box sx={{margin:'20px'}}>
-                            <Typography color="white" sx={{fontFamily:'Playfair Display', fontSize:{xs:'2rem', sm:'3rem'}}} >Services</Typography>
-                            <Typography color="white" sx={{fontFamily:'Playfair Display', fontSize:{xs:'2rem', sm:'3rem'}}} >About us</Typography>
-                            <Typography color="white" sx={{fontFamily:'Playfair Display', fontSize:{xs:'2rem', sm:'3rem'}}} >Blogs</Typography>
-                            <Typography color="white" sx={{fontFamily:'Playfair Display', fontSize:{xs:'2rem', sm:'3rem'}}} >Contact us</Typography>
-                            <Button sx={{bgcolor:'#FF6E6C', color:'white'}}>BOOK A FREE MARKETING AUDIT</Button>
+                            <Typography color="white" sx={{fontFamily:'Playfair Display', fontSize:{xs:'2rem', sm:'3rem'}, letterSpacing: '-0.31px', fontWeight: 400}} >Services</Typography>
+                            <Typography color="white" sx={{fontFamily:'Playfair Display', fontSize:{xs:'2rem', sm:'3rem'}, letterSpacing: '-0.31px', fontWeight: 400}} >About us</Typography>
+                            <Typography color="white" sx={{fontFamily:'Playfair Display', fontSize:{xs:'2rem', sm:'3rem'}, letterSpacing: '-0.31px', fontWeight: 400}} >Blogs</Typography>
+                            <Typography color="white" sx={{fontFamily:'Playfair Display', fontSize:{xs:'2rem', sm:'3rem'}, letterSpacing: '-0.31px', fontWeight: 400}} >Contact us</Typography>
+                            <Button className="btn" sx={{bgcolor:'#FF6E6C', color:'white', padding:'20px 36px', margin:'30px 0'}}>BOOK A FREE MARKETING AUDIT</Button>
                         </Box>
                     </Box>
     </Box>
 
 
-    <Box sx={{ 
+    <Box 
+        className="navbar"
+        sx={{ 
         width:1, 
-        height:'50px', 
+        height:'60px', 
         display: 'flex',
         alignItems:'center',
-        boxSizing:'border-box',
-        border:'1px solid black' 
+        px:4
         }}>
             
             <Box sx={{flex:1}}>
@@ -65,28 +67,17 @@ export default function navbar() {
                 }}></Box>
                 
             </Box>
-                <Box sx={{
-                    display:'flex',
+                <Box  className="toggle" 
+                    sx={{
+                    display:{xs:'none',sm:'flex'},
                     alignItems:'center',
-                    margin:'0 10px'
+                    margin:'0 10px',
+                    gap:'48px'
                     }}>
-                    <Typography sx={{margin:'10px', fontFamily:'Playfair Display', fontSize:{sx:'0px', sm:'25px'}}} color='#301E4E'>Contact</Typography>
-                    <Typography sx={{margin:'10px', fontFamily:'Playfair Display', fontSize:{sx:'0px', sm:'25px'}}} color='#301E4E'>Work</Typography>
-                    <Box onClick={handlePopup}
-                        sx={{
-                        width:'25px',
-                        height:'25px',
-                        border:'1px solid black',
-                        py:'6px',
-                        px:'4px',
-                        boxSizing:'border-box',
-                        borderRadius:50
-                    }}>
-                        <Box sx={{backgroundColor:'black', width:1, height:'2px', margin:'1px'}}></Box>
-                        <Box sx={{backgroundColor:'black', width:1, height:'2px', margin:'1px'}}></Box>
-                        <Box sx={{backgroundColor:'black', width:1, height:'2px', margin:'1px'}}></Box>
-                    </Box>
+                    <Typography  sx={{margin:'10px', fontFamily:'Playfair Display', fontSize:{sx:'0px', sm:'30px'}}} color='#301E4E'>Contact</Typography>
+                    <Typography sx={{margin:'10px', fontFamily:'Playfair Display', fontSize:{sx:'0px', sm:'30px'}}} color='#301E4E'>Work</Typography>
                 </Box>
+                    <MenuIcon onClick={handlePopup} fontSize="large"/>
     </Box>
 
     
