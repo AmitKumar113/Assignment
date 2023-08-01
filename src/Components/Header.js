@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <Box sx={{
         width:1,
-        height:'calc(100vh - 50px)',
+        minHeight:'calc(100vh - 50px)',
         backgroundImage: `url(${image})`,
         backgroundSize: 'cover',
         display:{xs:'flex', sm:'block'},

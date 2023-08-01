@@ -40,7 +40,7 @@ export default function navbar() {
                             <Typography color="white" sx={{fontFamily:'Playfair Display', fontSize:{xs:'2rem', sm:'3rem'}, letterSpacing: '-0.31px', fontWeight: 400}} >About us</Typography>
                             <Typography color="white" sx={{fontFamily:'Playfair Display', fontSize:{xs:'2rem', sm:'3rem'}, letterSpacing: '-0.31px', fontWeight: 400}} >Blogs</Typography>
                             <Typography color="white" sx={{fontFamily:'Playfair Display', fontSize:{xs:'2rem', sm:'3rem'}, letterSpacing: '-0.31px', fontWeight: 400}} >Contact us</Typography>
-                            <Button className="btn" sx={{bgcolor:'#FF6E6C', color:'white', padding:'20px 36px', margin:'30px 0'}}>BOOK A FREE MARKETING AUDIT</Button>
+                            <Button className="btn" sx={{bgcolor:'#FF6E6C', color:'white', padding:{xs:'11px 22px',sm:'20px 36px'}, margin:'30px 0'}}>BOOK A FREE MARKETING AUDIT</Button>
                         </Box>
                     </Box>
     </Box>

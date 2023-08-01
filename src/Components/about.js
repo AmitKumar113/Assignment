@@ -21,7 +21,7 @@ export default function about() {
     <>
     <Box sx={{
         width:1,
-        height:'100vh',
+        minHeight:{xs:'fit-content',sm:'100vh'},
         display:'flex',
         flexDirection:'column',
         justifyContent:'center',
@@ -31,7 +31,7 @@ export default function about() {
           <Typography sx={{fontSize:{xs:'1rem', sm:'25px'} , fontFamily:'Playfair Display', lineHeight:'normal'}} color='#301E4E'>WHO WE ARE</Typography>
           <Typography sx={{margin:'10px 0', fontSize:{xs:'3rem', sm:'4rem', md:'99px'}, fontFamily:'Playfair Display', fontWeight:900, lineHeight:'normal'}} color='#301E4E'>We are Extensive.</Typography>
           <Typography sx={{fontSize:{xs:'1rem', sm:'35px'} , fontFamily:'Source Sans Pro, calibri' , lineHeight:'normal', fontStyle:'normal'}}>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</Typography>
-          <Button variant="contained" sx={{width:"fit-content", marginTop:'40px', bgcolor:'#301E4E', padding:'20px 36px'}}>BOOK A FREE MASTER CLASS AUDIT</Button>
+          <Button variant="contained" sx={{width:"fit-content", marginTop:'40px', bgcolor:'#301E4E', padding:{xs:'11px 22px',sm:'20px 36px'}}}>BOOK A FREE MASTER CLASS AUDIT</Button>
       </Box>
     
 {/*************************     WHAT WE DO SECTION STARTS HERE       *************************/}
@@ -82,7 +82,7 @@ export default function about() {
                       <Typography sx={{fontSize:'2rem', margin:'10px 0',fontFamily:'Playfair Display'}} color='#301E4E'>Digital Marketing</Typography>
                       <Typography sx={{fontSize:'2rem', margin:'10px 0',fontFamily:'Playfair Display'}} color='#301E4E'>Digital Marketing</Typography>
                       <Typography sx={{fontSize:'2rem', margin:'10px 0',fontFamily:'Playfair Display'}} color='#301E4E'>Digital Marketing</Typography>
-                      <Button className="btn" variant="contained" sx={{width:'fit-content',padding:'20px 36px', margin:'10px 0', bgcolor:'#301e4e'}}>View all</Button>
+                      <Button className="btn" variant="contained" sx={{width:'fit-content',padding:{xs:'11px 22px',sm:'20px 36px'}, margin:'10px 0', bgcolor:'#301e4e'}}>View all</Button>
                   </Box>
             </Box>
 
@@ -98,7 +98,7 @@ export default function about() {
           }}>
             <Typography variant="h2" color="white" sx={{ lineHeight:'normal', fontFamily:'Playfair Display', fontWeight:700}}>OUR</Typography>
             <Typography variant="h2" color="white" sx={{ lineHeight:'normal', fontFamily:'Playfair Display', fontWeight:700}}>WORK</Typography>
-            <Button className="btn" variant="contained" sx={{width:'fit-content', padding:'20px 36px', margin:'10px', bgcolor:'#FF6E6C'}}>View all</Button>
+            <Button className="btn" variant="contained" sx={{width:'fit-content', padding:{xs:'11px 22px',sm:'20px 36px'}, margin:'10px', bgcolor:'#FF6E6C'}}>View all</Button>
 
             <Box sx={{
               display:'flex',
@@ -206,7 +206,7 @@ export default function about() {
 
 
         <Box sx={{
-          height:'80vh',
+          // minHeight:'80vh',
           margin:'20px'
         }}>
             <Typography sx={{fontSize:{xs:'3rem', sm:'4rem'},fontFamily:'Playfair Display', fontWeight:700, letterSpacing:'-0.31px', lineHeight:'normal'}} >Our</Typography>
@@ -219,23 +219,23 @@ export default function about() {
                 flexWrap:'wrap',
                 padding:'24px 0'
               }}>
-                  <Box sx={{flex:1, display:'flex', alignItems:'center', flexDirection:'column' }}>
+                  <Box sx={{flex:1, display:'flex', alignItems:'center', flexDirection:'column', minWidth:'90px', maxWidth:'30%' }}>
                       <img src={`${pinterest}`} width='70%' height='70%'></img>
                       <Typography sx={{textAlign:'center',fontSize:'25px', fontFamily:' Playfair Display', fontWeight:400}}>Pinterest</Typography>
                   </Box>
-                  <Box sx={{flex:1, display:'flex', alignItems:'center', flexDirection:'column' }}>
+                  <Box sx={{flex:1, display:'flex', alignItems:'center', flexDirection:'column', minWidth:'100px' , maxWidth:'30%'}}>
                       <img src={`${pwa}`} width='70%' height='70%'></img>
                       <Typography sx={{textAlign:'center',fontSize:'25px', fontFamily:' Playfair Display', fontWeight:400}}>PWA</Typography>
                   </Box>
-                  <Box sx={{flex:1, display:'flex', alignItems:'center', flexDirection:'column' }}>
+                  <Box sx={{flex:1, display:'flex', alignItems:'center', flexDirection:'column', minWidth:'100px', maxWidth:'30%' }}>
                       <img src={`${sass}`} width='70%' height='70%'></img>
                       <Typography sx={{textAlign:'center',fontSize:'25px', fontFamily:' Playfair Display', fontWeight:400}}>Sass</Typography>
                   </Box>
-                  <Box sx={{flex:1, display:'flex', alignItems:'center', flexDirection:'column' }}>
+                  <Box sx={{flex:1, display:'flex', alignItems:'center', flexDirection:'column', minWidth:'100px', maxWidth:'30%' }}>
                       <img src={`${vue}`} width='70%' height='70%'></img>
                       <Typography sx={{textAlign:'center',fontSize:'25px', fontFamily:' Playfair Display', fontWeight:400}}>Pinterest</Typography>
                   </Box>
-                  <Box sx={{flex:1, display:'flex', alignItems:'center', flexDirection:'column' }}>
+                  <Box sx={{flex:1, display:'flex', alignItems:'center', flexDirection:'column', minWidth:'100px', maxWidth:'30%' }}>
                       <img src={`${square}`} width='70%' height='70%'></img>
                       <Typography sx={{textAlign:'center',fontSize:'25px', fontFamily:' Playfair Display', fontWeight:400}}>Pinterest</Typography>
                   </Box>
